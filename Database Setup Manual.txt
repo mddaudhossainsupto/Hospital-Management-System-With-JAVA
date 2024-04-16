@@ -1,0 +1,51 @@
+Here is the MySql Setup for this project.
+For any further information email: dhsupto@gmail.com
+
+1. Create a database
+-- Creating database
+create database hospital;
+
+2. Select the database
+-- Selecting the database
+use hospital;
+
+3. Create an admin table
+-- Create admin table
+create table admin (
+login_id varchar(25),
+password varchar(25)
+);
+
+4. Create a Patients table
+-- Creating Patients table
+create table patients (
+  patient_id int primary key,
+  patient_name varchar(25),
+  fathers_name varchar(15),
+  address varchar(250),
+  contact_no varchar(10),
+  age int
+);
+
+5. Create a doctor’s table
+-- Creating doctors table
+create table doctors (
+  doctor_id int primary key,
+  doctor_name varchar(25),
+  father_name varchar(25),
+  contact_no varchar(10),
+  address varchar(250)
+  date_joining date
+);
+
+6. Create a room table
+-- Create room table
+create table room (
+room_no int,
+room_charges int
+);
+
+7. Insert some values in the admin table
+-- Inserting values
+insert into admin values
+("admin","1234")
